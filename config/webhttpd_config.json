@@ -1,0 +1,35 @@
+{
+  "user" : "www-data",
+  "worker_processes" : 8,
+  "pid" : "/run/webhttpd2.pid",
+
+  "http" : {
+    "access_log" : "/var/log/webhttpd2/access.log",
+    "error_log" : "/var/log/webhttpd2/error.log",
+    "gzip" : {
+      "enable" : true,
+      "comp_level" : 6,
+      "type" : "text/plain"
+    }
+  },
+
+  "server" : {
+    "listen" : [
+      80
+    ],
+    "root" : "../site-package/html",
+    "server_name" : "localhost",
+    "location" : {
+      "*.jpe?g|png|gif|ico": [
+        "$url",
+        "/fallback/404.py"
+      ],
+      "*" : [
+        "$url",
+        "$url.py",
+        "$url/",
+        "fallback/404.py"
+      ]
+    }
+  }
+}
