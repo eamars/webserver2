@@ -5,6 +5,8 @@
 #include <iostream>
 #include "Config.h"
 
+using namespace std;
+
 Config::Config() {
 
 }
@@ -42,18 +44,23 @@ void Config::dump(std::ofstream &file) {
 
 Json::Value Config::find_helper(Json::Value &node, std::string &key) {
     // is object and array type
-    if ((node.type() == Json::objectValue) || (node.type() == Json::arrayValue))
+    if (node.type() == Json::objectValue)
     {
-        for (auto &subnode : node)
+        for (auto &item : node.getMemberNames())
         {
-            find_helper(subnode, key);
-        }
-    }
+            // see if current node is the right one
+            if (item == key)
+            {
+                return node[item];
+            }
 
-    else
-    {
-        std::cout << node.isMember(key) << std::endl;
-        return node;
+            // search in child
+            Json::Value result = find_helper(node[item], key);
+            if (!result.isNull())
+            {
+                return result;
+            }
+        }
     }
 
     return Json::Value();

@@ -28,7 +28,12 @@ public:
     // de-constructor
     ~Config();
 
-    // recursively search for a specific key
+    // recursively search for a specific key in root configuration tree
+    // in a json formatted string
+    // the function will return the value node corresponding to a specific
+    // key. If the key is not found, a value with null will be returned.
+    // hint: isNull() can be used to determine whether a specific value
+    // is null
     Json::Value find(std::string key);
 
     // dump the whole json structrue to human readable strings
