@@ -9,10 +9,18 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
 
 # add jsoncpp into project
 find_package(JsonCpp REQUIRED)
+# add cpp-netlib into project
+find_package(CPPNETLIB REQUIRED)
+# add boost into project
+find_package(Boost COMPONENTS system filesystem REQUIRED)
 
 # build all source files
 set(SOURCE_FILES src/Config.cpp src/Config.h src/webhttpd2.cpp)
 add_executable(webserver2.out ${SOURCE_FILES})
 
 # link libraries
-target_link_libraries( webserver2.out ${JSONCPP_LIBRARY} )
+target_link_libraries( webserver2.out
+        ${JSONCPP_LIBRARY}
+        ${CPPNETLIB_LIBRARIES}
+        ${Boost_LIBRARIES}
+)

@@ -4,8 +4,13 @@
 
 #include <iostream>
 #include "Config.h"
+#include <boost/network/protocol/http/parser.hpp>
+
 
 using namespace std;
+
+namespace http = boost::network::http;
+
 
 int main()
 {
@@ -15,7 +20,19 @@ int main()
 
     conf_file.close();
 
-    cout << conf.find("user");
+    cout << conf.find("") << endl;
+
+    http::client client;
+    std::ostringstream url;
+    url << "http://www.google.com/";
+    http::client::request request(url.str());
+    http::client::response response =
+            client.get(request);
+
+    for (auto &entry : response.headers())
+    {
+        cout << entry.first << ":" << entry.second << endl;
+    }
 
 
     return 0;

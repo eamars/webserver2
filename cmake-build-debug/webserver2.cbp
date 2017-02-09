@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="webserver2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\jsoncpp\;CMake Files\..\..\..\..\usr\local\lib\cmake\cppnetlib\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/eamars/Workspace/webserver2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/eamars/Workspace/webserver2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/eamars/Workspace/webserver2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="webserver2.out">
+				<Option output="/Users/eamars/Workspace/webserver2/cmake-build-debug/webserver2.out" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/eamars/Workspace/webserver2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 webserver2.out"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="webserver2.out/fast">
+				<Option output="/Users/eamars/Workspace/webserver2/cmake-build-debug/webserver2.out" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/eamars/Workspace/webserver2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 webserver2.out/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/eamars/Workspace/webserver2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/eamars/Workspace/webserver2/src/Config.cpp">
+			<Option target="webserver2.out"/>
+		</Unit>
+		<Unit filename="/Users/eamars/Workspace/webserver2/src/Config.h">
+			<Option target="webserver2.out"/>
+		</Unit>
+		<Unit filename="/Users/eamars/Workspace/webserver2/src/webhttpd2.cpp">
+			<Option target="webserver2.out"/>
+		</Unit>
+		<Unit filename="/Users/eamars/Workspace/webserver2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/eamars/Workspace/webserver2/cmake/FindJsonCpp.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/eamars/Workspace/webserver2/../../../../usr/local/lib/cmake/jsoncpp/jsoncppConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/Users/eamars/Workspace/webserver2/../../../../usr/local/lib/cmake/jsoncpp/jsoncppConfig-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/Users/eamars/Workspace/webserver2/../../../../usr/local/lib/cmake/cppnetlib/CPPNETLIBConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\cppnetlib\"/>
+		</Unit>
+		<Unit filename="/Users/eamars/Workspace/webserver2/../../../../usr/local/lib/cmake/cppnetlib/CPPNETLIBConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\cppnetlib\"/>
+		</Unit>
+		<Unit filename="/Users/eamars/Workspace/webserver2/../../../../usr/local/lib/cmake/cppnetlib/cppnetlibTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\cppnetlib\"/>
+		</Unit>
+		<Unit filename="/Users/eamars/Workspace/webserver2/../../../../usr/local/lib/cmake/cppnetlib/cppnetlibTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\cppnetlib\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
